@@ -9,7 +9,7 @@ class Profile extends React.Component{
             fullName : "Anoop Shrestha",
             title : "Student/Developer",
             status : "online",
-            progressBar : "34",
+            progressBar : 12,
         };
     }
 
