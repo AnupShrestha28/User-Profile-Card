@@ -21,12 +21,12 @@ class Profile extends React.Component{
 
                     <h4 className="profile-start-name">{this.state?.fullName && this.state.fullName.slice(0,1)}</h4>
 
-                    <p className="profile-bio-info">{this.state.title}</p>
+                    <p className="profile-bio-info">{this.state?.title}</p>
 
                     <p className="profile_progress_bar__bar" style={{ width: this.state?.progressBar || 0 + "px"}}></p>
 
 
-                    <p className={`profile-status ${this.state.status}`}></p>
+                    <p className={`profile-status ${this.state?.status}`}></p>
                 </div>
             </>
         );
