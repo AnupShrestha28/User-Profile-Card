@@ -9,7 +9,7 @@ class Profile extends React.Component{
             fullName : "Anoop Shrestha",
             title : "Student/Developer",
             status : "online",
-            progressBar : 12,
+            progressBar : 67,
         };
     }
 
@@ -17,10 +17,15 @@ class Profile extends React.Component{
         return(
             <>
                 <div className="profile-info">
-                    <h1 className="profile-full-name">{this.state.fullName}</h1>
-                    <h4 className="profile-start-name">{this.state.fullName[0]}</h4>
+                    <h1 className="profile-full-name">{this.state?.fullName || ''}</h1>
+
+                    <h4 className="profile-start-name">{this.state?.fullName && this.state.fullName.slice(0,1)}</h4>
+
                     <p className="profile-bio-info">{this.state.title}</p>
-                    <p className="profile_progress_bar__bar" style={{ width: this.state.progressBar}}></p>
+
+                    <p className="profile_progress_bar__bar" style={{ width: this.state?.progressBar || 0 + "px"}}></p>
+
+
                     <p className={`profile-status ${this.state.status}`}></p>
                 </div>
             </>

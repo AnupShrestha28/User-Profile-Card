@@ -60,7 +60,7 @@
     top: 33px;
 }
 
-/* .profile_progress_bar{
+.profile_progress_bar{
     position: absolute;
     width: 164px;
     height: 6px;
@@ -68,7 +68,7 @@
     top: 54px;
     background: #FFF;
     border-radius: 5.5px;
-} */
+}
 
 
 .profile_progress_bar__bar{
