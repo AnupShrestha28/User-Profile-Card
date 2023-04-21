@@ -23,7 +23,7 @@ class Profile extends React.Component{
 
                     <p className="profile-bio-info">{this.state?.title}</p>
 
-                    <p className="profile_progress_bar__bar" style={{ width: this.state?.progressBar || 0 + "px"}}></p>
+                    <p className="profile_progress_bar__bar" style={{ width: this.state?.progressBar || 0}}></p>
 
 
                     <p className={`profile-status ${this.state?.status}`}></p>
