@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@200;300;400;500&family=Roboto:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto",sans-serif;
+}
+
+.profile-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #F4F4F4;
+    left: 18px;
+    top: 55px;
+    position: relative;
+    width: 239px;
+    height: 73px;
+    border-radius: 8px;
+    border: 1px solid #E5E5E5;
+}
+
+.profile-full-name{
+    line-height: 19px;
+    font-weight: 500;
+    font-size: 16px;
+    position: absolute;
+    left: 61px;
+    top: 14px;
+}
+
+.profile-start-name{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 12px;
+    left: 14px;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.15px;
+    border-radius: 50%;
+    color: #fff;
+    background: #6200EE;
+
+}
+
+.profile-bio-info{
+    color: #767676;
+    font-weight: 400;
+    font-size: 12px;
+    position: absolute;
+    left: 61px;
+    top: 33px;
+}
+
+/* .profile_progress_bar{
+    position: absolute;
+    width: 164px;
+    height: 6px;
+    left: 61px;
+    top: 54px;
+    background: #FFF;
+    border-radius: 5.5px;
+} */
+
+
+.profile_progress_bar__bar{
+    position: absolute;
+    width: 91.26px;
+    height: 6px;
+    left: 61px;
+    top: 54px;
+    background: #922EE0;
+    border-radius: 5.5px;
+}
+
+.online{
+    background-color: #19E26A;
+}
+
+.offline{
+    background-color: black;
+}
+
+.profile-status{
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    left: 180px;
+    top: 24px;
+    border-radius: 50%;
+    /* background: #19E26A; */
+}
+
