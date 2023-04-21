@@ -1,4 +1,3 @@
-import './App.css';
 import Profile from './components/Profile.js';
 
 function App() {
