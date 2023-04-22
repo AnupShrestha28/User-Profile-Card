@@ -1,5 +1,10 @@
 import React from "react";
 import '../assets/css/Profile.css';
+import FullName from "./FullName";
+import Avatar from "./Avatar";
+import Title from "./Title";
+import ProgressBar from "./ProgressBar";
+import Status from "./Status";
 
 class Profile extends React.Component{
 
@@ -17,16 +22,17 @@ class Profile extends React.Component{
         return(
             <>
                 <div className="profile-info">
-                    <h1 className="profile-full-name">{this.state?.fullName || ''}</h1>
+                    
+                    <FullName fullName={this.state.fullName} />
 
-                    <h4 className="profile-start-name">{this.state?.fullName && this.state.fullName.slice(0,1)}</h4>
-
-                    <p className="profile-bio-info">{this.state?.title}</p>
-
-                    <p className="profile_progress_bar__bar" style={{ width: this.state?.progressBar || 0}}></p>
+                    <Avatar fullName={this.state?.fullName && this.state.fullName.slice(0, 1)}/>
 
 
-                    <p className={`profile-status ${this.state?.status}`}></p>
+                    <Title title= {this.state.title} />
+
+                    <ProgressBar progressBar = {this.state.progressBar} />
+
+                    <Status status = {this.state.status} />
                 </div>
             </>
         );
